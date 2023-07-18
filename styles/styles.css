@@ -3,7 +3,138 @@
   padding: 0;
   box-sizing: border-box;
 }
+img {
+  width: 100%;
+}
+p {
+  margin: 16px 0;
+}
 /* Shared Style */
 body {
   font-family: "Work Sans", sans-serif;
+}
+.linear-color {
+  background-image: linear-gradient(to bottom, #f948b2, #8758f1);
+  color: transparent;
+  -webkit-background-clip: text;
+}
+.primary-color {
+  color: #ff42a5;
+}
+.btn-primary {
+  border-radius: 48px;
+  padding: 21px 40px;
+  background-color: #ff42a5;
+  border: 0;
+  margin-top: 40px;
+}
+.btn-secoundry {
+  border-radius: 48px;
+  background: #4ec5f7;
+  padding: 21px 40px;
+  border: 0;
+  margin-top: 40px;
+  margin-left: 24px;
+}
+.btn-anchor {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.main-container {
+  padding: 120px 240px;
+}
+/* Header Related Style */
+/* Navbar Related Style */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 240px;
+  background: #fff;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.logo img {
+  width: 85px;
+  height: 40px;
+}
+.logo h1 {
+  color: #0b0223;
+  font-size: 45px;
+  font-weight: 700;
+}
+.logo-text-color-change {
+  color: #ff42a5;
+}
+nav div ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
+nav ul li a {
+  text-decoration: none;
+}
+.nav-inner {
+  border-radius: 8px;
+  background: rgba(11, 2, 35, 0.1);
+  padding: 16px 24px;
+}
+.nav-inner a {
+  color: #3c354f;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  margin-right: 18px;
+  cursor: pointer;
+}
+.youtube {
+  color: red;
+  margin-left: 24px;
+}
+/* Banner-Related Style */
+.banner-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 68px;
+  background-image: url("../images/Group14.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 50%;
+}
+.banner-column-1 {
+  padding-left: 240px;
+}
+.banner-column-1 h2 {
+  color: #0b0223;
+  font-size: 48px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.banner-column-1 h1 {
+  font-size: 95px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.banner-column-1 p {
+  color: #534c64;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: lowercase;
+  margin-left: 12px;
+}
+.banner-column-2 img {
+  width: fit-content;
+  padding-top: 20px;
+  padding-right: 240px;
 }
