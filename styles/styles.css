@@ -102,8 +102,8 @@ nav ul li a {
 }
 /* Banner-Related Style */
 .banner-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   gap: 68px;
   background-image: url("../images/Group14.png");
@@ -131,10 +131,47 @@ nav ul li a {
   font-size: 20px;
   font-weight: 500;
   text-transform: lowercase;
-  margin-left: 12px;
+  padding-left: 12px;
 }
 .banner-column-2 img {
   width: fit-content;
   padding-top: 20px;
   padding-right: 240px;
+}
+
+/* Gammer Section related Style */
+.gamer-continer {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  padding: 55px 240px;
+}
+.gamer-column-2 {
+  padding: 100px 0;
+  direction: rtl;
+}
+.gamer-column-2 h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+.gamer-column-2 p {
+  color: #534c64;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.gamer-column-2 button {
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
+.gamer-column-2 h3 {
+  color: #534c64;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 45px;
+}
+.gamer-column-2 q {
+  color: #534c64;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 45px;
 }
