@@ -50,8 +50,10 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 40px 240px;
-  background: #fff;
   box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+.nav-bg {
+  background: #fff;
 }
 .logo {
   display: flex;
@@ -306,7 +308,7 @@ nav ul li a {
 }
 
 /* Carrers related Style */
-.carrers {
+.carrers::after {
   background-image: url("../images/Group20.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -319,7 +321,6 @@ nav ul li a {
   padding-top: 120px;
   padding-bottom: 120px;
   gap: 40px;
-  z-index: 0;
 }
 .careers-column-1 {
   width: 50%;
@@ -348,6 +349,13 @@ nav ul li a {
   font-weight: 600;
   line-height: 40px;
 }
+.inner-link-container:hover {
+  border-radius: 50px;
+  background-color: #fff;
+  border: 4px solid #f948b2;
+  color: #f948b2;
+  padding: 10px;
+}
 .carrers-button {
   border-radius: 48px;
   background: #fff;
@@ -359,5 +367,86 @@ nav ul li a {
   padding: 21px 40px;
   border: 0;
 }
-.careers-column-2 img {
+
+/* Importent Link related Style */
+.importernt-link-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 120px 240px;
+}
+.importernt-link-container {
+  flex: 0 0 calc(20% -20px);
+}
+.importernt-link-container img {
+  width: 60px;
+  height: 60px;
+  padding-right: 10px;
+}
+.inner-link-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Footer related Style */
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #0b0223;
+  padding: 120px 240px;
+}
+#footer-logo {
+  color: white;
+}
+.footer-container nav ul {
+  display: flex;
+  gap: 60px;
+}
+.footer-container nav ul li {
+  list-style: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  font-weight: 500;
+}
+.footer-container nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+.footer-container nav ul li a i {
+  font-size: 40px;
+}
+.copyright {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: -20px;
+}
+
+.hide {
+  display: none;
+}
+@media screen and (max-width: 576px) {
+  nav,
+  nav div ul {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .banner-container {
+    flex-direction: column-reverse;
+    gap: 50px;
+  }
+  nav,
+  .banner-container,
+  .banner-column-1 {
+    padding: 10px;
+    margin: 0;
+  }
+  .banner-column-2 img {
+    width: 100%;
+    padding: 0;
+  }
 }
