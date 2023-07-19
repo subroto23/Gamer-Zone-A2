@@ -402,6 +402,7 @@ nav ul li a {
 }
 .footer-container nav ul {
   display: flex;
+  flex-wrap: wrap;
   gap: 60px;
 }
 .footer-container nav ul li {
@@ -431,22 +432,109 @@ nav ul li a {
 }
 @media screen and (max-width: 576px) {
   nav,
-  nav div ul {
+  nav div ul,
+  .play-instantly-container,
+  .careers-container {
     flex-direction: column;
     gap: 50px;
   }
-  .banner-container {
+  .banner-container,
+  .play-games-container {
     flex-direction: column-reverse;
     gap: 50px;
   }
   nav,
   .banner-container,
-  .banner-column-1 {
+  .banner-column-1,
+  .gamer-continer,
+  .gamer-column-2,
+  .container,
+  .play-instantly-container,
+  .text-play-instantly,
+  .play-games-container,
+  .play-games-column-1,
+  .careers-container,
+  .importernt-link-container,
+  .footer-container {
     padding: 10px;
     margin: 0;
   }
-  .banner-column-2 img {
+  .btn-secoundry {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .banner-column-2 img,
+  .gamer-column-1 img {
     width: 100%;
     padding: 0;
+  }
+  .gamer-continer,
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+  .gamer-column-2,
+  .play-instantly-column-1 h1,
+  .play-instantly-column-1 p {
+    text-align: center;
+    direction: ltr;
+    line-height: 30px;
+  }
+  .banner-column-1 h1,
+  .play-games-column-1 h1 {
+    font-size: 50px;
+  }
+  .gamer-column-2 h1,
+  .play-instantly-column-1 h1,
+  .play-games-column-1 h1 {
+    font-size: 2rem;
+    line-height: 40px;
+  }
+  .gamer-column-2 q,
+  .section-title {
+    font-size: 1rem;
+  }
+  .inner-image img {
+    position: absolute;
+    bottom: -20px;
+    left: -20px;
+    width: 30%;
+    height: 30%;
+  }
+  .inner-games-image img {
+    width: 30%;
+    height: 30%;
+    right: -20px;
+    bottom: -20px;
+  }
+  .play-games-column-1 {
+    left: 0;
+  }
+  .careers-container {
+    margin-top: 30px;
+  }
+  .careers-column-1 {
+    width: 100%;
+  }
+  .inner-carrers-container {
+    display: none;
+  }
+  .importernt-link-container {
+    justify-content: flex-start;
+    margin-top: 30px;
+  }
+  .inner-link-container h2 {
+    font-size: 12px;
+  }
+  .footer-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .footer-container nav ul {
+    gap: 30px;
+    justify-content: center;
+  }
+  .copyright {
+    margin-top: 10px;
+    text-align: center;
   }
 }
