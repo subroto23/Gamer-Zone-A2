@@ -146,7 +146,7 @@ nav ul li a {
 }
 .gamer-column-2 {
   padding: 100px 0;
-  direction: rtl;
+  text-align: right;
 }
 .gamer-column-2 h1 {
   font-size: 48px;
@@ -308,16 +308,16 @@ nav ul li a {
 }
 
 /* Carrers related Style */
-.carrers::after {
+.carrers {
   background-image: url("../images/Group20.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
 }
 .careers-container {
+  background-color: #ff42a5;
   display: flex;
   align-items: center;
-  background-color: #ff42a5;
   padding-top: 120px;
   padding-bottom: 120px;
   gap: 40px;
@@ -354,7 +354,7 @@ nav ul li a {
   background-color: #fff;
   border: 4px solid #f948b2;
   color: #f948b2;
-  padding: 10px;
+  padding: 5px;
 }
 .carrers-button {
   border-radius: 48px;
@@ -420,15 +420,24 @@ nav ul li a {
 .footer-container nav ul li a i {
   font-size: 40px;
 }
+.icon-link {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 50px;
+}
+.icon-link li {
+  list-style: none;
+}
+.icon-link li a {
+  font-size: 40px;
+  text-decoration: none;
+  color: #fff;
+}
 .copyright {
   color: rgba(255, 255, 255, 0.6);
   font-size: 16px;
   font-weight: 500;
   margin-top: -20px;
-}
-
-.hide {
-  display: none;
 }
 @media screen and (max-width: 576px) {
   nav,
@@ -519,11 +528,23 @@ nav ul li a {
     display: none;
   }
   .importernt-link-container {
-    justify-content: flex-start;
-    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 30px 0;
+    gap: 20px;
+  }
+
+  .inner-link-container:hover {
+    border-radius: 20px;
+    border: 2px solid #f948b2;
+    padding: 5px;
   }
   .inner-link-container h2 {
-    font-size: 12px;
+    font-size: 10px;
+  }
+  .inner-link-container img {
+    width: 30px;
+    height: 30px;
   }
   .footer-container {
     padding-top: 50px;
@@ -533,11 +554,18 @@ nav ul li a {
     gap: 30px;
     justify-content: center;
   }
-  .copyright {
+  .icon-link {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
     margin-top: 10px;
+  }
+  .copyright {
+    margin: 10px 0;
     text-align: center;
   }
 }
+
 @media screen and (min-width: 577px) and (max-width: 830px) {
   nav,
   nav div ul,
@@ -637,6 +665,21 @@ nav ul li a {
   .inner-link-container h2 {
     font-size: 12px;
   }
+
+  .importernt-link-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 30px 0;
+    gap: 20px;
+  }
+  .inner-link-container h2 {
+    font-size: 10px;
+  }
+  .inner-link-container img {
+    width: 30px;
+    height: 30px;
+  }
+
   .footer-container {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -644,6 +687,10 @@ nav ul li a {
   .footer-container nav ul {
     gap: 30px;
     justify-content: center;
+  }
+  .icon-link {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
   .copyright {
     margin-top: 10px;
