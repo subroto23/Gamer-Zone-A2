@@ -43,9 +43,6 @@ body {
   font-weight: 600;
   text-transform: uppercase;
 }
-.main-container {
-  padding: 120px 240px;
-}
 /* Header Related Style */
 /* Navbar Related Style */
 nav {
@@ -174,4 +171,193 @@ nav ul li a {
   font-size: 32px;
   font-weight: 700;
   line-height: 45px;
+}
+
+/* Online Games Related Style */
+.container {
+  padding: 0 240px 120px 240px;
+}
+.section-title {
+  color: #0b0223;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+}
+.section-description {
+  text-align: center;
+  color: #534c64;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-top: 16px;
+  margin-bottom: 45px;
+}
+
+/* Online Games Related Style */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+.online-game-image {
+  display: block;
+  position: relative;
+}
+.online-game-image:hover .overlay {
+  border-radius: 16px;
+  border: 4px solid #ff42a5;
+  opacity: 1;
+  transition: 0.2s;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  border-radius: 16px;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 100%;
+}
+.content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: red;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+.content h1 i {
+  margin-bottom: 16px;
+  color: white;
+}
+.card-body p {
+  color: #534c64;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+/* Play Instantly Related Style */
+.play-instantly-container {
+  display: flex;
+  align-items: center;
+  gap: 265px;
+}
+.play-instantly-column-1 h1 {
+  text-align: center;
+  text-align: right;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+}
+.play-instantly-column-2 {
+  position: relative;
+}
+.inner-image img {
+  position: absolute;
+  bottom: -100px;
+  left: -100px;
+  width: 310px;
+  height: 360px;
+}
+.text-play-instantly {
+  padding-left: 190px;
+  direction: rtl;
+  color: #534c64;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+/* Play Games related Style */
+
+.play-games-container {
+  display: flex;
+  align-items: center;
+  gap: 250px;
+}
+.play-games-column-1 {
+  text-align: left;
+  position: relative;
+  left: 120px;
+}
+.play-games-column-1 h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+}
+.play-games-column-2 {
+  position: relative;
+}
+.inner-games-image img {
+  position: absolute;
+  bottom: -50px;
+  right: -100px;
+  width: 310px;
+  height: 360px;
+}
+.text-games-instantly {
+  color: #534c64;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+/* Carrers related Style */
+.carrers {
+  background-image: url("../images/Group20.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+}
+.careers-container {
+  display: flex;
+  align-items: center;
+  background-color: #ff42a5;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  gap: 40px;
+  z-index: 0;
+}
+.careers-column-1 {
+  width: 50%;
+}
+.careers-column-1 h1 {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+}
+.careers-column-1 p {
+  color: #fff;
+  font-size: 18px;
+  text-align: justify;
+  font-weight: 400;
+  line-height: 30px;
+}
+.inner-carrers-container {
+  display: flex;
+  justify-content: space-between;
+}
+.inner-carrers-container div {
+  padding: 32px 0;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 40px;
+}
+.carrers-button {
+  border-radius: 48px;
+  background: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  color: #f948b2;
+  padding: 21px 40px;
+  border: 0;
+}
+.careers-column-2 img {
 }
